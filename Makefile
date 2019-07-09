@@ -1,16 +1,12 @@
 CC=g++
 CFLAGS=-c -Wall 
-SOURCES=todo.cc main.cc
-OBJECTS=$(SOURCES:.cc=.o)
+SOURCES=todo.cpp main.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=todo_app
 
-all: $(SOURCES) $(EXECUTABLE) 
+all: 
+	g++ $(SOURCES) -o todo_app `pkg-config --cflags --libs gtkmm-3.0`
 
-$(EXECUTABLE): $(OBJECTS) 
-	$(CC) $(OBJECTS) -o $@ `pkg-config gtkmm-3.0 --libs`
-
-.cc.o:
-	$(CC) $(CFLAGS) $< -o $@ `pkg-config gtkmm-3.0 --cflags`
 
 clean:
 	rm -rf *.o todo_app
