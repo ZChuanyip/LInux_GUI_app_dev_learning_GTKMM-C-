@@ -12,8 +12,8 @@ Language/tools: C++, GTKMM, Geany IDE<br />
 
 ### Sample UI layout of this application<br />
 ###### Feature
-Add new task : key in task name in the input and click "add new task" button
-Delete task : Select the task and click "Delete task button"
+Add new task : key in task name in the input and click "add new task" button<br />
+Delete task : Select the task and click "Delete task button"<br />
 ![UI layout](https://github.com/ZChuanyip/LInux_GUI_app_dev_learning_GTKMM-C-/blob/master/readme_img/adde.JPG)
 
 
